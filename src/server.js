@@ -1,3 +1,4 @@
+import userRoutes from './routes/userRoutes.js';
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
@@ -22,6 +23,7 @@ app.use(logger);
 
 app.use(authRoutes);
 app.use(notesRoutes);
+app.use(userRoutes);
 
 app.use(notFoundHandler);
 
